@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso CSS - Completo</title>
+</head>
+<style>
+    * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       font-family: Arial, sans-serif;
+    }
+
+    body {
+        background-color: #f0f0f5;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    header {
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        background-color: #333;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1rem;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 20px auto;
+        max-width: 1200px;
+    }
+
+    .sidebar {
+        flex: 1;
+        min-width: 250px;
+        background: #f8f8f8;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .content {
+        flex: 2;
+        min-width: 300px;
+        padding: 20px;
+        background-color: white;
+        margin: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    }
+
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #450a49;
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+  }
+
+</style>
+
+
+<body>
+   <header>
+        <h1>Curso de HTML e CSS - Página de Exemplo</h1>
+   </header>
+
+   <!-- Navegação -->
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+</nav>
+
+<!-- Conteúdo principal -->
+<div class="container">
+    <!-- Barra lateral -->
+   <aside class="sidebar"> 
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#">Introdução ao HTML</a></li>
+            <li><a href="#">CSS Básico</a></li>
+            <li><a href="#">Layouts com Flexbox</a></li>
+        </ul>
+   </aside>
+
+   <!-- Área de conteúdo -->
+    <section class="content">
+        <h2>Bem-vindo ao Curso</h2>
+        <p>Este curso vai ensinar você a construir sua página completa.</p>
+
+        <h3>Por que aprender CSS?</h3>
+        <p>Com CSS, você pode transformar sua página em uma bela e bonita página.</p>
+
+        <button>Saiba Mais </button>
+    </section>
+</div>
+
+<footer>
+    <p>Curso de HTML e CSS &copy; 2024</p>
+</footer>
+</body>
+</html>
